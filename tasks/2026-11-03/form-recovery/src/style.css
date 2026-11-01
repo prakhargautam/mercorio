@@ -1,0 +1,18 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #17212b; background: #f4f6f8; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 680px; margin: 9vh auto; padding: 40px; background: #fff; border: 1px solid #e1e6eb; border-radius: 16px; box-shadow: 0 16px 40px #152a3a0d; }
+.eyebrow { color: #537089; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+h1 { margin: 12px 0 8px; font-size: 30px; }
+header p { margin: 0 0 32px; color: #5b6873; }
+form { display: grid; gap: 20px; }
+.field { display: grid; gap: 8px; font-size: 14px; font-weight: 600; }
+.field b { color: #bd3838; }
+input { width: 100%; padding: 12px 14px; border: 1px solid #b9c4ce; border-radius: 8px; font: inherit; }
+input[aria-invalid="true"] { border-color: #bd3838; }
+small { color: #a32626; font-weight: 500; }
+.hint { margin: 0; color: #687782; font-size: 13px; }
+button { justify-self: start; padding: 12px 18px; color: #fff; background: #225b88; border: 0; border-radius: 8px; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #19496e; }
+.status { margin: 0; padding: 12px; background: #eef5f8; border-radius: 8px; }
+
