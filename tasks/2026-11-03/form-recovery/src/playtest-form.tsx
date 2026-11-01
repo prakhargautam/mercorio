@@ -68,11 +68,10 @@ export function PlaytestForm() {
             {errors[field.name] && <small id={`${field.name}-error`}>{errors[field.name]}</small>}
           </label>
         ))}
-        <p className="hint">Demo behavior: enter â€œserver errorâ€ in the title to simulate a failed save.</p>
+        <p className="hint">Demo behavior: enter "server error" in the title to simulate a failed save.</p>
         <button type="submit">Create playtest</button>
         {status && <p role="status" className="status">{status}</p>}
       </form>
     </main>
   );
 }
-
