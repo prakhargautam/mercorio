@@ -1,0 +1,16 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #1c2935; background: #f3f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 900px; margin: 50px auto; padding: 32px; background: #fff; border: 1px solid #e2e8ec; border-radius: 16px; }
+.eyebrow { color: #617c8d; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+h1 { margin: 8px 0; font-size: 32px; }
+header > p:last-child { color: #63727d; }
+.search { display: grid; gap: 8px; margin: 28px 0 14px; font-size: 14px; font-weight: 700; }
+input { padding: 12px 14px; border: 1px solid #b9c6ce; border-radius: 8px; font: inherit; }
+.count { color: #63727d; font-size: 13px; }
+.list { display: grid; gap: 8px; }
+.row { display: grid; grid-template-columns: 1fr 100px 80px; align-items: center; gap: 16px; padding: 12px; border: 1px solid #e3e9ed; border-radius: 8px; }
+.row div { display: grid; gap: 4px; }
+.row div span { color: #647581; font-size: 13px; }
+button { padding: 8px 10px; border: 1px solid #bfd0da; border-radius: 7px; background: #f7fafb; cursor: pointer; }
+button[aria-pressed="true"] { color: #fff; background: #285f7e; }
