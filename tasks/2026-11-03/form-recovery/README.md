@@ -1,4 +1,4 @@
-# Playtest form recovery â€” task starter
+# Playtest form recovery - task starter
 
 This is a synthetic React + TypeScript app for a Project Odin task idea. It contains intentional bugs. Do not read the solution from elsewhere; investigate the behavior, make the changes yourself, and narrate your decisions while recording.
 
@@ -34,9 +34,8 @@ Open the local URL printed by Vite. To simulate a failed save, include `server e
 
 ## Recording outline
 
-â€œIâ€™ll inspect how this form is configured and submitted before changing anything. First Iâ€™ll reproduce the two reported problems: invalid URL input getting through and form values disappearing after a server error. Iâ€™ll follow each behavior to the validation and error-handling code, make the smallest fix that fits the existing pattern, add regression coverage, and verify the failure and retry paths.â€
+"I'll inspect how this form is configured and submitted before changing anything. First I'll reproduce the two reported problems: invalid URL input getting through and form values disappearing after a server error. I'll follow each behavior to the validation and error-handling code, make the smallest fix that fits the existing pattern, add regression coverage, and verify the failure and retry paths."
 
 ## Odin note
 
 This task has not been checked against the full Writer Guidelines yet. Confirm task approval, recording rules, and allowed tools before using it for a submission. The app and data are synthetic and contain no employer or customer information.
-
