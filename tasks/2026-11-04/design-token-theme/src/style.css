@@ -1,0 +1,12 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #1e2a33; background: #f3f6f8; --green-700: #18734b; --amber-700: #875a00; --red-700: #b52d35; --surface: #fff; --text: #1e2a33; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { min-height: 100vh; padding: 28px; color: var(--text); background: #f3f6f8; transition: .2s; }
+.app.dark { --surface: #1f2b34; --text: #edf3f7; background: #121a20; }
+header { display: flex; justify-content: space-between; max-width: 900px; margin: auto; }
+button { padding: 9px 13px; border: 1px solid #91a3af; border-radius: 8px; background: var(--surface); color: var(--text); cursor: pointer; }
+section { max-width: 700px; margin: 80px auto; padding: 32px; background: var(--surface); border-radius: 14px; }
+.brand, .eyebrow { color: #678090; font-size: 12px; font-weight: 800; letter-spacing: .11em; }
+h1 { margin-bottom: 8px; }
+section > p:not(.eyebrow) { color: #6a7b86; }
+.sample { margin-top: 16px; padding: 16px; border: 1px solid currentColor; border-radius: 8px; background: color-mix(in srgb, currentColor 8%, var(--surface)); font-weight: 700; }
