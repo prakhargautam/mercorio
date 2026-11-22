@@ -1,0 +1,4 @@
+import { useRef, useState } from 'react';
+import { shouldRestoreTriggerFocus } from './model';
+export function FilterDialog(){const [open,setOpen]=useState(false);const trigger=useRef<HTMLButtonElement>(null);function close(){setOpen(false);if(shouldRestoreTriggerFocus(true))trigger.current?.focus();}
+return <main className="card"><p className="eyebrow">PRODUCT CATALOG</p><h1>Catalog filters</h1><button ref={trigger} onClick={()=>setOpen(true)}>Open filters</button><p>Open the dialog with a keyboard, then close it and check focus.</p>{open&&<div className="scrim"><section role="dialog" aria-modal="true" aria-labelledby="title"><h2 id="title">Filters</h2><label><input type="checkbox"/> Lighting</label><label><input type="checkbox"/> Furniture</label><button onClick={close}>Close filters</button></section></div>}</main>}
