@@ -1,0 +1,3 @@
+import { useState } from 'react';
+import { canPublish, type Role } from './model';
+export function PublishSettings(){const [role,setRole]=useState<Role>('viewer');return <main className="card"><p className="eyebrow">WORKSPACE ACCESS</p><h1>Publish build</h1><label>Current role<select value={role} onChange={(e)=>setRole(e.target.value as Role)}><option value="viewer">Viewer</option><option value="editor">Editor</option><option value="admin">Admin</option></select></label><p>Role: <b>{role}</b></p>{canPublish(role)?<button>Publish build</button>:<p role="status">Only workspace admins can publish builds.</p>}</main>}
